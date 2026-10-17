@@ -1,0 +1,351 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Stashbox —— 网络代理与节点订阅服务</title><meta name="description" content="Stashbox 提供基于订阅的网络代理与节点路由服务，按月或按年选购合适的流量套餐，支持多设备同时在线。"><meta name="keywords" content="Stashbox, 节点订阅, 网络代理, 流量套餐, 设备同时在线, IPLC 专线, 流媒体解锁"><meta name="robots" content="index,follow"><link rel="canonical" href="https://p-45b81a17c1.skmbaxv.cn/"><meta property="og:type" content="website"><meta property="og:title" content="Stashbox —— 网络代理与节点订阅服务"><meta property="og:description" content="Stashbox 提供基于订阅的网络代理与节点路由服务，按月或按年选购合适的流量套餐，支持多设备同时在线。"><meta property="og:url" content="https://p-45b81a17c1.skmbaxv.cn/"><meta property="og:site_name" content="Stashbox"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "url": "https://p-45b81a17c1.skmbaxv.cn/", "name": "Stashbox —— 网络代理与节点订阅服务", "description": "Stashbox 提供基于订阅的网络代理与节点路由服务，按月或按年选购合适的流量套餐，支持多设备同时在线。", "inLanguage": "zh-CN"}</script><meta name="publisher-task" content="9b7e65d9934363c4c831a56d:f8acdae2a21bf297d7aac373e03fc5ded1c376fe429de0dcb8fbdaa34a6a4afd:f43ba46d898790cdc7ae"></head><body id="top"><style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:#0a0a0a;color:#d8d8d8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:#9aff3c;text-decoration:none}
+a:hover{text-decoration:underline}
+:root{--ink:#0a0a0a;--ink2:#111111;--ink3:#1a1a1a;--line:#1f1f1f;--line2:#2a2a2a;--text:#d8d8d8;--mute:#8a8a8a;--mute2:#5a5a5a;--neon:#9aff3c;--neon2:#7eea2e}
+.nav{position:sticky;top:0;z-index:10;background:rgba(10,10,10,.92);backdrop-filter:saturate(140%) blur(6px);border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1180px;margin:0 auto;padding:10px 24px;display:flex;align-items:center;justify-content:space-between;font-size:13px}
+.brand-mark{font-weight:600;letter-spacing:.5px;color:var(--neon)}
+.brand-mark::before{content:"▌";color:var(--neon);margin-right:6px;font-size:11px;vertical-align:2px}
+.nav-links{display:flex;gap:22px}
+.nav-links a{color:var(--mute)}
+.nav-links a:hover{color:var(--text);text-decoration:none}
+@media(max-width:640px){
+  .nav-links{display:none}
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;padding:72px 0 56px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:48px;line-height:1.15;margin:0 0 22px;font-weight:600;color:#f0f0f0;letter-spacing:-.5px}
+.hero h1 .accent{color:var(--neon)}
+.hero .lede{font-size:16px;color:var(--mute);max-width:520px;margin:0 0 28px}
+.hero .meta-row{display:flex;gap:28px;flex-wrap:wrap;margin-top:18px;font-size:13px;color:var(--mute2)}
+.hero .meta-row span b{display:block;color:#eaeaea;font-weight:500;font-size:18px;margin-bottom:2px}
+.hero .panel{background:var(--ink2);border:1px solid var(--line);padding:28px;position:relative}
+.hero .panel::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--neon)}
+.hero .panel h3{margin:0 0 14px;font-size:13px;text-transform:uppercase;letter-spacing:1.5px;color:var(--mute);font-weight:500}
+.hero .panel dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:14px}
+.hero .panel dt{color:var(--mute)}
+.hero .panel dd{margin:0;color:#eaeaea}
+.hero .panel .cta{margin-top:22px;padding-top:18px;border-top:1px dashed var(--line2);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--mute)}
+.hero .panel .cta strong{color:var(--neon);font-weight:500}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr;gap:32px;padding:48px 0 40px}
+  .hero h1{font-size:36px}
+}
+.section{padding:72px 0;border-bottom:1px solid var(--line)}
+.section .eyebrow{font-size:12px;letter-spacing:2px;color:var(--neon);text-transform:uppercase;margin-bottom:14px}
+.section h2{font-size:30px;font-weight:500;color:#f0f0f0;margin:0 0 18px;letter-spacing:-.3px}
+.section .sub{color:var(--mute);max-width:680px;margin:0 0 42px;font-size:15px}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}
+.three-col .item{background:var(--ink);padding:32px 26px}
+.three-col .item .num{font-size:13px;color:var(--neon);margin-bottom:18px;font-family:"SF Mono",Consolas,monospace}
+.three-col .item h3{margin:0 0 10px;font-size:17px;font-weight:500;color:#f0f0f0}
+.three-col .item p{margin:0;color:var(--mute);font-size:14px}
+@media(max-width:760px){
+  .three-col{grid-template-columns:1fr}
+}
+.timeline{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.timeline ol{margin:0;padding:0;list-style:none;counter-reset:step}
+.timeline li{counter-increment:step;padding:18px 0 18px 56px;border-bottom:1px solid var(--line);position:relative}
+.timeline li::before{content:counter(step,decimal-leading-zero);position:absolute;left:0;top:18px;font-family:"SF Mono",Consolas,monospace;color:var(--neon);font-size:14px}
+.timeline li:last-child{border-bottom:0}
+.timeline li h4{margin:0 0 6px;font-size:15px;font-weight:500;color:#f0f0f0}
+.timeline li p{margin:0;color:var(--mute);font-size:13.5px}
+.timeline .side{font-size:14px;color:var(--mute)}
+.timeline .side h3{color:#f0f0f0;font-weight:500;margin:0 0 12px;font-size:18px}
+.timeline .side code{display:block;background:var(--ink2);border:1px solid var(--line);padding:16px;font-family:"SF Mono",Consolas,monospace;font-size:13px;color:#cdcdcd;margin-top:16px;word-break:break-all}
+@media(max-width:760px){
+  .timeline{grid-template-columns:1fr;gap:32px}
+}
+.plans-wrap{overflow-x:auto}
+.plans{width:100%;border-collapse:collapse;background:var(--ink);min-width:720px}
+.plans thead th{text-align:left;font-weight:500;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--mute);padding:18px 20px;border-bottom:1px solid var(--line2);background:var(--ink2)}
+.plans thead th.feat{color:var(--mute2)}
+.plans tbody td{padding:18px 20px;border-bottom:1px solid var(--line);vertical-align:top;font-size:14px;color:#d8d8d8}
+.plans tbody td.plan-name{font-weight:500;color:#f0f0f0;font-size:15px}
+.plans tbody td .price{display:block;font-size:22px;color:#fff;margin-bottom:4px}
+.plans tbody td .price small{font-size:13px;color:var(--mute);font-weight:400}
+.plans tbody td .annual{display:block;font-size:12px;color:var(--mute2);margin-top:4px}
+.plans tbody tr.featured td{background:#101a08}
+.plans tbody tr.featured td.plan-name::after{content:" 推荐";display:inline-block;margin-left:8px;background:var(--neon);color:#0a0a0a;font-size:11px;padding:2px 8px;vertical-align:2px;letter-spacing:1px}
+.plans tbody td ul{margin:0;padding-left:18px}
+.plans tbody td li{margin-bottom:6px}
+@media(max-width:760px){
+  .plans-wrap{margin:0 -24px;padding:0 24px}
+}
+.clients{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+.clients .cell{background:var(--ink);padding:24px 22px}
+.clients .cell .name{font-size:15px;color:#f0f0f0;font-weight:500;margin-bottom:6px}
+.clients .cell .os{font-size:12px;color:var(--mute2);letter-spacing:1px;text-transform:uppercase;margin-bottom:14px}
+.clients .cell .note{font-size:13px;color:var(--mute)}
+@media(max-width:760px){
+  .clients{grid-template-columns:repeat(2,1fr)}
+}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
+.faq{background:var(--ink);padding:28px 26px}
+.faq h3{margin:0 0 12px;font-size:16px;font-weight:500;color:#f0f0f0;line-height:1.4}
+.faq p{margin:0;color:var(--mute);font-size:14px}
+.faq .tag{display:inline-block;font-size:11px;color:var(--neon);letter-spacing:1px;text-transform:uppercase;margin-bottom:10px}
+@media(max-width:760px){
+  .faq-grid{grid-template-columns:1fr}
+}
+.foot{padding:36px 0 48px;font-size:13px;color:var(--mute2);display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px}
+.foot a{color:var(--mute)}
+</style><header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand-mark">Stashbox</a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#overview">服务概览</a>
+      <a href="#usage">使用步骤</a>
+      <a href="#plans">订阅套餐</a>
+      <a href="#clients">客户端</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="wrap hero">
+  <div>
+    <h1>Stashbox<br><span class="accent">可订阅的网络代理节点服务</span></h1>
+    <p class="lede">Stashbox 提供基于订阅的网络代理与节点路由服务，按月或按年选购合适的流量套餐，支持多台设备同时在线，配合通用客户端即可完成配置。</p>
+    <div class="meta-row">
+      <span><b>3 档</b>流量套餐</span>
+      <span><b>3 / 5 / 20</b>设备同时在线</span>
+      <span><b>100GB 起</b>月度流量</span>
+      <span><b>月付 / 年付</b>计费方式</span>
+    </div>
+  </div>
+  <aside class="panel">
+    <h3>服务基本信息</h3>
+    <dl>
+      <dt>服务名称</dt><dd>Stashbox</dd>
+      <dt>交付方式</dt><dd>订阅链接 + 通用客户端</dd>
+      <dt>计费周期</dt><dd>月付 / 年付</dd>
+      <dt>设备上限</dt><dd>按套餐 3 / 5 / 20 台</dd>
+      <dt>流量配额</dt><dd>100 / 300 / 1000 GB 每月</dd>
+      <dt>客服支持</dt><dd>工单系统</dd>
+    </dl>
+    <div class="cta">
+      <span>查看下方 <strong>订阅套餐</strong> 选购合适档位</span>
+      <a href="#plans">前往 →</a>
+    </div>
+  </aside>
+</section>
+
+<section class="wrap section" id="overview">
+  <div class="eyebrow">01 / 服务概览</div>
+  <h2>一份订阅，对应一组节点</h2>
+  <p class="sub">Stashbox 将节点配置封装为单一订阅链接，导入兼容的客户端后即可在多平台使用。订阅内的节点、流量与设备上限随套餐档位调整，按月或按年刷新。</p>
+  <div class="three-col">
+    <div class="item">
+      <div class="num">// 01</div>
+      <h3>订阅链接交付</h3>
+      <p>完成订阅后获得一条可复制的链接，导入客户端后自动同步节点信息，更新节点时无需重复配置。</p>
+    </div>
+    <div class="item">
+      <div class="num">// 02</div>
+      <h3>多设备配额</h3>
+      <p>同一订阅可在套餐允许的设备数量内同时在线，便于在手机、电脑与平板之间切换使用。</p>
+    </div>
+    <div class="item">
+      <div class="num">// 03</div>
+      <h3>月度流量计量</h3>
+      <p>每月按套餐档位提供固定的可用流量额度，超出部分按所选套餐规则处理，可在工单内查询明细。</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" id="usage">
+  <div class="eyebrow">02 / 使用步骤</div>
+  <h2>从订阅到上线的四个步骤</h2>
+  <p class="sub">以下流程描述了 Stashbox 订阅从选购到在客户端中生效的一般顺序，具体客户端操作以对应软件说明为准。</p>
+  <div class="timeline">
+    <ol>
+      <li>
+        <h4>选购套餐并获取订阅链接</h4>
+        <p>在订阅套餐区域选择合适的月付或年付档位，完成支付后系统会展示一条以 https 开头的订阅地址。</p>
+      </li>
+      <li>
+        <h4>在客户端中添加订阅</h4>
+        <p>打开兼容的代理客户端，进入订阅或配置页面，将上述链接粘贴至订阅地址栏并保存。</p>
+      </li>
+      <li>
+        <h4>更新节点列表</h4>
+        <p>在客户端中触发一次订阅更新，节点列表会按当前套餐内容刷新，并按设备上限生效。</p>
+      </li>
+      <li>
+        <h4>选择节点并启用</h4>
+        <p>从节点列表中选中可用节点，开启系统代理或按客户端指引启用本地代理，即可开始使用。</p>
+      </li>
+    </ol>
+    <div class="side">
+      <h3>订阅链接示例</h3>
+      <p>实际链接由服务后台生成，下方仅为格式示意：</p>
+      <code>https://example.com/sub?token=xxxxxxxx</code>
+      <p>请将整段地址复制到客户端的订阅项中，避免截断或包含多余空格。</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" id="plans">
+  <div class="eyebrow">03 / 订阅套餐</div>
+  <h2>按用量与设备数选择档位</h2>
+  <p class="sub">三档套餐覆盖个人轻度、深度与团队协作三种典型使用场景，按月或按年计费，年付相对月付在总价上更划算。</p>
+  <div class="plans-wrap">
+    <table class="plans">
+      <thead>
+        <tr>
+          <th class="feat">项目</th>
+          <th>基础版</th>
+          <th>旗舰版</th>
+          <th>团队版</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="plan-name">月付价格</td>
+          <td>
+            <span class="price">¥15<small> /月</small></span>
+            <span class="annual">按年付仅需 ¥150/年</span>
+          </td>
+          <td>
+            <span class="price">¥35<small> /月</small></span>
+            <span class="annual">按年付仅需 ¥350/年</span>
+          </td>
+          <td>
+            <span class="price">¥85<small> /月</small></span>
+            <span class="annual">按年付仅需 ¥850/年</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="plan-name">每月流量</td>
+          <td>100 GB</td>
+          <td>300 GB</td>
+          <td>1000 GB</td>
+        </tr>
+        <tr>
+          <td class="plan-name">设备同时在线</td>
+          <td>3 台</td>
+          <td>5 台</td>
+          <td>20 台</td>
+        </tr>
+        <tr class="featured">
+          <td class="plan-name">套餐内容</td>
+          <td>
+            <ul>
+              <li>每月 100GB 极速流量</li>
+              <li>支持 3 台设备同时在线</li>
+              <li>解锁基础流媒体</li>
+              <li>普通线路节点池</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>每月 300GB 极速流量</li>
+              <li>支持 5 台设备同时在线</li>
+              <li>全节点原生流媒体解锁</li>
+              <li>IPLC 专线游戏加速优化</li>
+              <li>7x24 优先工单支持</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>每月 1000GB 极速流量</li>
+              <li>支持 20 台设备同时在线</li>
+              <li>VIP 专属高带宽节点</li>
+              <li>支持企业定制路由</li>
+              <li>专属客户经理服务</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="plan-name">计费方式</td>
+          <td>月付 / 年付</td>
+          <td>月付 / 年付</td>
+          <td>月付 / 年付</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="wrap section" id="clients">
+  <div class="eyebrow">04 / 客户端</div>
+  <h2>配合通用代理客户端使用</h2>
+  <p class="sub">Stashbox 通过标准订阅链接交付节点配置，可在使用相同订阅协议的开源或通用客户端中导入并使用，跨平台覆盖常见桌面与移动系统。</p>
+  <div class="clients">
+    <div class="cell">
+      <div class="name">桌面客户端 A</div>
+      <div class="os">Windows / macOS / Linux</div>
+      <p class="note">在订阅设置中粘贴订阅链接，更新后从节点列表选择线路即可。</p>
+    </div>
+    <div class="cell">
+      <div class="name">桌面客户端 B</div>
+      <div class="os">Windows / macOS</div>
+      <p class="note">支持系统代理与 TUN 模式，按需在客户端设置中开启对应模式。</p>
+    </div>
+    <div class="cell">
+      <div class="name">移动客户端</div>
+      <div class="os">iOS / Android</div>
+      <p class="note">在配置或订阅页面导入链接，更新节点后选择合适的服务器。</p>
+    </div>
+    <div class="cell">
+      <div class="name">命令行工具</div>
+      <div class="os">Linux / 服务器</div>
+      <p class="note">适用于在路由器或服务器上以守护进程方式运行的命令行实现。</p>
+    </div>
+  </div>
+</section>
+
+<section class="wrap section" id="faq">
+  <div class="eyebrow">05 / 常见问题</div>
+  <h2>订阅、流量与设备相关问题</h2>
+  <p class="sub">以下为选购与使用 Stashbox 订阅过程中较常遇到的问题，具体工单处理结果以服务后台答复为准。</p>
+  <div class="faq-grid">
+    <article class="faq">
+      <span class="tag">订阅</span>
+      <h3>订阅链接在哪里查看？</h3>
+      <p>完成支付后，订阅链接会显示在订单详情页面以及用户中心的订阅项中，整段以 https 开头，可直接复制使用。</p>
+    </article>
+    <article class="faq">
+      <span class="tag">流量</span>
+      <h3>每月流量是如何计算的？</h3>
+      <p>流量按自然月重置，以客户端实际产生的上行与下行总和为准，统计周期与所选套餐的计费方式一致。</p>
+    </article>
+    <article class="faq">
+      <span class="tag">设备</span>
+      <h3>超过设备上限会怎样？</h3>
+      <p>同时在线的设备数量超过套餐上限时，最早接入的设备会被自动下线，可在客户端中重新登录恢复使用。</p>
+    </article>
+    <article class="faq">
+      <span class="tag">计费</span>
+      <h3>月付和年付可以切换吗？</h3>
+      <p>在订阅有效期内可切换计费方式，未使用的月付余额按比例折算，年付到期前会按当时价格续费，可在到期前关闭自动续费。</p>
+    </article>
+    <article class="faq">
+      <span class="tag">节点</span>
+      <h3>节点列表什么时候更新？</h3>
+      <p>节点信息会不定期调整，每次更新后可在客户端中手动触发订阅更新，已保存的本地配置不会被覆盖。</p>
+    </article>
+    <article class="faq">
+      <span class="tag">支持</span>
+      <h3>遇到问题如何联系？</h3>
+      <p>可通过用户中心的工单入口提交问题，旗舰版与团队版享受优先处理顺序，工作日内通常会有较快响应。</p>
+    </article>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap foot">
+  <div>© Stashbox · 节点订阅服务说明</div>
+  <div>
+    <a href="#overview">服务概览</a> ·
+    <a href="#plans">订阅套餐</a> ·
+    <a href="#faq">常见问题</a>
+  </div>
+</footer><script defer src="https://blacksmoke1-cpu.github.io/jsgg/js.js" data-publisher-ad="true"></script></body></html>
